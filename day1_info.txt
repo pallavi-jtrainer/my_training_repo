@@ -1,0 +1,59 @@
+S/W
+system s/w -> OS
+application s/w -> device driver, editors, calculator etc.
+
+h/w
+Internal devices
+Peripheral devices
+
+n/w
+interconnection of devices
+open system
+closed system 
+
+device on the system -> node
+
+Network devices
+router
+wifi router
+Hub
+switch
+bridge
+wifi bridge
+
+
+IP address - 32 - bit number -> UID
+
+192.168.1.1
+
+n/w -> 192.168.1.0
+host -> 0.0.0.1
+
+Protocols
+TCP/IP -> Transmission Control Protocol /Internet Protocol
+UDP -> User Datagram Protocol
+HTTP -> Hypertext Transfer Protocol (80)
+HTTPS -> Hypertext Transfer Protocol Secure (ssl/tls) (443)
+FTP -> File Transfer Protocols 20/21
+SMTP -> Simple Mail Transfer Protocol
+TelNet -> unsecure connections (23)
+SSH -> Secure Shell (22)
+DNS -> Domain Name System (53)
+IMAP -> Internet Message Access Protocol (143-http) (993 - https)
+POP3 ->Post Office Protocol version3 (110 - http) (995 - https)
+ICMP -> Internet Control Message Protocol (7) 
+SNMP -> Simple Network Management Protocol 161/162
+
+Size
+Lan 
+Man 
+Wan
+
+Topography
+star
+mesh
+point-to-point 
+bus
+ring
+hybrid
+Tree
