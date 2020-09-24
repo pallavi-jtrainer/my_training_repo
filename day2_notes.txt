@@ -1,0 +1,121 @@
+https://www.javatpoint.com/data-structure-tutorial/
+https://www.geeksforgeeks.org/data-structures/
+
+DataStructures
+1. Based on how the data is stored
+	Linear
+	Non-linear
+2. Based on memory allocation 
+	Static 
+	Dynamic
+
+Linear Datastructure
+1. Stack
+2. queue
+	Deque
+	Priority Queue
+3. Linked Lists
+	Doubly linked list
+	Singly linked list
+	Circular linked list
+4. Arrays
+
+Non-linear
+1. Tree
+	Binary
+		balanced
+		unbalanaced
+			left
+			right
+	Forest
+	B+
+	recursion
+	decision
+2. Graph
+	directed
+	undirected
+
+
+Static
+1. Array - fixed size
+
+Dynamic
+All DS except Arrays
+
+
+
+STACK
+Last In First Out - LIFO
+push -> add item
+pop -> remove item
+Traversal -> linear
+
+QUEUE
+First In first Out - FIFO
+add -> adds item in the end
+remove -> removes item from front
+
+	DEQUE - >double ended Q
+	add_front, add_end
+	remove_front, remove_end
+
+	Priority Q -> each item has a priority
+	add
+	remove
+Traversal -> linear
+
+LINKED LIST
+nodes -> 2 parts (data, address of next node)
+head -> starting point
+add_front, add_last, add_middle
+remove_front, remove_last, remove_middle
+Traversal -> linear
+	Singly Linked List -> every node has 1 node only associated
+	Doubly Linked List -> every node is connected to node before and node after
+	Circular Linked List -> last node points to the first node
+
+BINARY TREE
+	Root node, child node, leaf node
+	
+Traversals
+	BFS - Breadth First Search
+	DFS - Depth First Search
+		In Order Left-Root-Right
+		Post Order Left-Right-Root
+		Pre Order Root-Left-Right
+
+BST - Binary Search Tree
+	All elements less than root -> left
+	All greater than root -> right
+
+Graph
+	node (Vertex), edge
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
