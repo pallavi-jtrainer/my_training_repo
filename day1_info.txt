@@ -6,6 +6,20 @@ h/w
 Internal devices
 Peripheral devices
 
+Memory
+Primary -> ROM and RAM
+Secondary -> HDD, Pendrive, SSD etc.
+Cache -> high speed memory close to the CPU
+	L1 -> Part of Cache is in the CPU
+        L2, L3 -> Outside the CPU
+Register -> high speed memory in the CPU
+
+
+In RAM -> Stack and Heap
+ Stack -> LIFO
+ Heap -> Randomized
+
+
 n/w
 interconnection of devices
 open system
@@ -57,3 +71,30 @@ bus
 ring
 hybrid
 Tree
+
+
+Process Management
+Process -> program in execution
+
+States of a Process
+1. New
+2. Ready
+	Wait
+	Resume
+3. Running
+	Abort
+4. Stop 
+5. Terminate
+
+Parts of a Process
+ProcessID
+Process State
+CPU registers info
+I/O Status 
+CPU scheduling -> priority
+
+
+
+
+
+
