@@ -13,7 +13,6 @@ Shells - execution environment
 	Korn Shell
 Command Prompt <Machine-name/path>$
 
-
 Language - Shell Script
 
 Architecture - Layered
@@ -157,6 +156,56 @@ k -> up arrow
 j -> down arrow
 l -> right arrow
 h -> left arrow
+
+================================================================================
+SDLC -> Software Development Life Cycle
+Requirement Gathering
+Requirement Analysis
+Design
+Coding / Developement
+Testing
+
+Deployement
+Maintainence
+
+
+1. Waterfall
+2. Iterative model
+3. spiral model
+4. radix model
+5. V -shaped model
+6. Agile 
+
+AGILE and SCRUM
+Scrum = process framework, subset of Agile
+
+Product Backlog
+Sprint Backlog
+	user stories
+		tasks
+			assigned 
+
+
+As an employee I should be able to apply for leave
+	create an employee class
+	retrieve information about number of leaves available
+		connect to the db
+		fetch info from employee table into object
+	apply for leave
+		input the start date and end date
+		input leave type and desc
+		
+
+
+
+
+
+
+
+
+
+
+
 
 
 
