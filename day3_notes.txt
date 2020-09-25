@@ -1,0 +1,169 @@
+https://www.guru99.com/the-vi-editor
+
+UNIX - 1960s
+Multi-user, multi-tasking system
+Client - Server architecture
+Paid -> high level of security
+Command Line
+Shells - execution environment
+	Bash - Bourne Again SHell
+	SH - Shell
+	CSH - C Shell
+	KSH - K Shell
+	Korn Shell
+Command Prompt <Machine-name/path>$
+
+
+Language - Shell Script
+
+Architecture - Layered
+1. Kernel
+2. Shell
+3. System Commands - Shell Scripts, Compilers, Interpreters
+4. User scripts, editors
+
+Commands
+pwd - > present working directory
+mkdir <dirname> -> creates a dir with the name 
+cd <dirname> -> change directory
+
+cat -> create a file and display the contents of a file
+	cat>>filename -> write into file
+	cat filename -> display the contents of file
+
+mv -> rename or move a file or folder
+	mv oldname newname -> rename
+	mv source destination -> move the file or folder
+
+ls -> list directory
+ls -l -> long listing
+	permission -> r(read) w(write) x(execute) d(directory) -rwx     rwx    rwx 
+			4	2	1			 user  group  others
+	Links (nodes)
+	User name
+	group name
+	others name
+	size
+	date of modification
+	name of file/folder
+ls -a -> all the hidden also
+
+ls -la -> long listing with hidden files
+ls -lf
+ls -f
+
+chmod permission filename -> octal
+0: no permissions
+1: execute
+2: write
+3: write and execute
+4: read
+5: read and execute
+6: read and write
+7: all permissions
+
+-> permission letters
+U -> user +r/w/x -> adding a permission    -r/w/x ->removing
+G -> group
+O -> others
+
+ex: chmod u+w filename              u-w filename 
+
+variable -> named location in memory
+
+echo -> printing a value to the Output
+for content of variable ->$varname
+
+rm -> remove files
+rmdir -> remove directory
+
+rm -r -> recursive deletion
+rm -f -> force deletion
+rm -rf -> force recursive delete
+
+wc -> word count
+wc filename
+-l -> lines
+-w -> words
+-c -> characters
+
+| (pipe) -> redirects the information to another command
+ex: sort results.txt|uniq
+
+Filter -> filter the input and print the filtered data
+grep -> searches in a file for some value. it is case-sensitive
+	grep "pattern" filename
+options:
+	-i -> case - insensitive
+	-l -> return the file which has the pattern in it
+	-c -> count the number of lines which have the pattern
+	-w -> match whole words
+	-o -> display only the matched pattern
+
+head -> retrieves from top of file
+	-n number -> for a particular number of rows
+tail -> retrieves from bottom of file
+	-n number
+sort -> sort a file. ascending by default.  
+	-r ->reverse sort
+	-k number -> columnwise sort
+ex: sort -r -k 3 results.txt
+
+uniq -> filter the unique values
+cut -> filters based on character, field and delimiter
+	-c -> characters
+	-f -> field
+	-d -> delimiter
+ex: cut -c2 results.txt -> the second character   
+    cut -c2-5 results.txt -> range of characters 
+    cut -f 3 -d " " results.txt -> third column
+
+
+VI Editor
+vi -> open the vi editor.
+give filename with the command or while saving
+
+To edit
+i -> insert before cursor
+a -> append after cursor
+I -> Insert in the beginning
+A -> append in the end of the line
+o -> open a line below cursor
+O -> open line above cursor
+u -> undo the last change
+U -> undo all changes in that line
+dd -> delete a line
+numberdd (3dd) -> delete n lines
+dw -> delete a word
+numberdw (3dw) -> delete n words
+cw -> change word
+p -> paste
+x -> delete a character
+s -> substitute 1 character under cursor
+S -> substitute entire line
+r -> replace a character
+R -> Replace characters from the cursor onwards
+D -> delete line contents after the cursor
+C -> delete line contents after cursor and insert new contents.
+
+to save and quit
+:w -> save
+:q -> quit
+:wq -> save and quit
+:q! -> override and quit
+
+to move in the editor
+k -> up arrow
+j -> down arrow
+l -> right arrow
+h -> left arrow
+
+
+
+
+
+
+
+
+
+
