@@ -1,0 +1,53 @@
+Git -> Distributed Version Control System
+
+local/working directory -> on your machine -> .git
+	clone the remote repo -> git clone <link to the repo>
+	initialize your local directory -> converts to repo -> git init
+
+git add <file name /* > -> add the files to the staging area
+
+staging area
+git commit -m ""
+git push
+
+remote repo
+
+git pull
+
+git rebase
+
+
+
+Trobleshooting for GitHub ssh connection
+1. delete .git folder
+2. git init
+3. ssh-keygen -t rsa -b 4096 -C "email@email.com"
+   -> give a new name to the keys
+   -> cut the files from your current location and paste into .ssh folder
+4. eval $(ssh-agent -s) -> start the ssh agent
+5. ssh-add ~/.ssh/<new key name>
+6. open the new key .pub file (in .ssh).
+   -> copy the content
+7.Go to Github. Click on your avatar, select Setting
+8. Select SSH and GPG keys
+9. Click on New SSH Key
+10. Give a title and paste the content.
+11. Click on Add SSH key
+
+In git bash continue with the add, commit and push
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
