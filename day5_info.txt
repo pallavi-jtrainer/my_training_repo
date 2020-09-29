@@ -1,0 +1,71 @@
+Git Continued: (the information about these commands is available in the book I have shared as well as the pdf shared by Hexaware with you.)
+git stash -> to stash uncommited files before switching into another branch
+	-- look up the various options with this command 
+
+git pull -> to get the latest updates from the branch
+
+git branch -> git branch <branch name> -> creates a child branch
+
+git checkout -b <branchname> -> creates a child branch and switches to it
+
+git merge -> adds the contents of the child branch to the master branch and removes the child branch
+
+git rebase -> used to reset the starting point of the child branch with the master branch
+
+git checkout
+	git checkoout <filename> -> unstages a file from staging area
+	git checkout <branch name> -> to switch branches
+
+git diff
+	- to check the difference between files
+	git diff branch1..branch2 -> to check differences between 2 branches
+
+git log -> to check the logs. Type q to quit the logs
+
+Steps to handle Merge conflict
+1. git checkout master
+2. git pull
+3. git checkout <your branch name>
+4. git rebase -i master
+      -> any conflicts between your changes and changes in the files in master will appear now. 
+      -> Open the files in VS Code or vi editor or in any editor of your choice.
+      ->  go through the changes one by one, and resolve the conflicts.
+          -> Merge conflicts are highlighted with `<<<` and `>>>` markers
+	  -> delete the markers
+               then -> git add <file in conflict>
+                    -> git rebase --continue
+
+
+Multi-tier architecture
+Presentation - Angular (web framework)
+	Rest Service - war (Web Archive)
+Business - Java
+Persistence - DB
+
+mvn -> maven -> Java framework
+
+Steps are in Week1.md for the below set of commands
+
+1. mvn package
+2. Open File explorer
+3. Goto the project folder\MLP23X\LMS_BusinessComponent\leavemanager\target
+4. Copy MLP23X-0.0.1-SNAPSHOT.war
+5. Paste it in apache-tomcat-x.x.x\webapps folder
+6. Rename the file to MLP23X.war
+7. Go to the previous folder (apache-tomcat-x.x.x)
+8. Open git bash here
+9. At the command prompt type in the below commands
+	rm -rf logs/*
+	./bin/startup.sh
+	tail -f logs/*
+10. Minimize this git bash window
+11. Open a second git bash window. type in the below command
+	curl -vvv http://localhost:8080/MLP23X/api/employees | python -m json.tool
+   -- this command should open the URL in the default browser and show the list of employee ids
+12. Next type the below command in the git bash window
+	curl -vvv http://localhost:8080/MLP23X/api/employees/2000 | python -m json.tool
+	
+
+
+
+
