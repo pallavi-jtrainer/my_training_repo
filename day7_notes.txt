@@ -1,0 +1,108 @@
+DML -> Data Manipulation Language
+
+insert -> to insert a record
+	single insert ->
+		insert into <tablename> values (numbers, 'strings', 'dates-yyyy/mm/dd or mm/dd/yyyy')
+	multi-line insert
+		insert into <tablename> (column_list) values (values set1), (values set 2), (values set3), .... (values setn);
+Ex: insert into student (student_id, student_name, age, phone) values 
+(6, 'Robin Hood', 25, 938377222),
+(7, 'Harry Potter', 20, 9883838),
+(8, 'Tony Stark', 37, 728272722),
+(9, 'Sprider Man', 24, 83883333);
+
+INSERT INTO <tablename> SET column1=value, SET column2=value;
+
+
+---------------------------------------------------------------------------------
+
+Update -> to modify a value in a record or multiple records
+	update <tablename> SET column_name = new_value 
+	WHERE condition
+ex: UPDATE student SET phone=838829922 WHERE student_id=7;
+ex2: UPDATE student SET phone=838829922, age=24 WHERE student_id=7;
+ex3: update employee set avail_leaves = 15 where mgr_id = 1005 AND dept='testing';
+
+commit;
+--------------------------------------------------------------------------------------
+
+Select -> retrieve the records from a table
+	SELECT * FROM <table name> -> retrieve all records
+	SELECT <column list> from <table name> -> get all the records with only those columns
+	SELECT * FROM <table name> WHERE condition -> get all the records based on the conditions
+
+Ex: Select * from Student;
+ex: select * from employee where mgr_id=1005;
+--------------------------------------------------------------------------------------
+
+DELETE -> remove records
+	DELETE FROM <tablename> WHERE condition -> deletes records which match condition
+	DELETE FROM <tablename> -> delete all the records
+
+_-------------------------------------------------------------------------------------------
+
+
+Transaction Control Language - TCL
+SavePoint
+Rollback
+Commit
+
+To create a savepoint
+	savepoint <name>;
+
+Steps to create a savepoint
+1. start transaction;
+2. dml statements;
+3. savepoint <name>;
+
+anything after savepoint is not considered when rolling back to savepoint
+
+to Rollback a transaction:
+	rollback to <savepoint name> -> rolls back to a savepoint
+	rollback; -> rolls back all transactions
+
+to commit 
+	Commit;
+
+any rollback after commit will not work
+-----------------------------------------------------------------------------------------
+
+DQL -> Database Query Language
+PS: select <column_list> from table; => to retrieve data from db through programming language
+ex: select 
+	lastname 
+    from employees 
+    order by 
+        lastname 
+    desc; -> sorting in reverse
+
+ex: select distinct lastname from employees; -> get a single value for each repetition
+
+ex: select 
+	empid as 'Employee ID', 
+	firstname as 'First Name', 
+	reportsto as 'Manager ID', 
+	jobtitle as 'Designation'
+    from employees; => column aliasing
+
+select <columnlist> from table where column in (list)
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
