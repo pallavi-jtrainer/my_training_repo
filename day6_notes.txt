@@ -1,0 +1,69 @@
+DBMS -> Database Management System
+Tables -> Rows (Records), cols (fields)
+Data redundancy
+RDBMS -> Relational DB Management System
+	MySQL
+	Oracle
+	PostGres
+	MS SQL
+
+Relations between tables
+	1 to 1
+	1 to many
+	many to many
+
+Normalization -> To reduce data redundancy
+	NF1 to NF5, BCNF
+
+Every table in RDBMS
+	Tuple -> Row/Record
+	Column -> field/property/attributes
+	Schema -> define the tables and their attributes
+	Key -> define the uniqueness of Tuple
+	Constraints/conditions
+
+SQL -> Structured Query Language
+	TL -> Transaction Language
+	DDL -> Data definition Language
+	DML -> Data Manipulation Language
+
+DDL Commands
+	show databases -> displays all the databases
+	create database <db name> -> create a database
+	use <db name> -> switch into the database that you want to work with
+	create table <tablename> (fieldlist);	
+
+Datatypes
+	1. numeric datatypes
+		int, float, double, bigint, smallint, decimal, number, bit, tinyint, mediumint
+	2. string datatypes
+		char, varchar, blob, binary, varbinary, text
+	3. date and time
+		date, datetime, timestamp, time, year 
+	
+	create table student (
+		student_id int,
+		student_name varchar(20),
+		age int);
+
+  alter table student add courseid int;
+  alter table student modify column student_name varchar(35);
+  alter table student drop courseid;
+
+create -> to define the structure of a table, to define a database
+	alter -> modify the structure of a table
+	drop -> delete the table and its contents, delete the database and its contents
+	truncate -> delete the contents from a table
+
+	desc student; -> describes the table
+
+
+
+
+
+
+
+
+
+
+	
