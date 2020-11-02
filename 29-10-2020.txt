@@ -1,0 +1,64 @@
+Web Service -> communicate between 2 programming languages
+-> client - server architecture
+-> set of rules / protocols which govern the exchange of information
+
+Components
+1. Protocol (SOAP)
+2. WSDL -> Web Services Description Language.
+	-> XML document has information about the method name, params, access to the method
+3. UDDI -> Universal Description, Discovery and Integration
+
+SOAP -> Simple Object Access Protocol
+     -> XML based. 
+     -> platform independent
+     -> language independent
+     -> WS Security 
+
+REST -> REpresentational State Transfer 
+     -> architectural style
+     -> fast
+     -> language and platform independent
+     -> data formats like XML, Text, JSON, HTML
+
+Java Web Services API (Application Programming Interface)
+1. jax-ws -> SOAP
+2. jax-rs -> REST
+	-> jersey
+	-> RestEasy
+
+RESTful WS
+1. every resource should be accessible through the HTTP methods (GET, POST, PUT, DELETE, PATCH)
+2. client-server based
+3. stateless
+
+Components REST API
+1. URI - Uniform Resource Indicatior/Identifier (http://localhost:8080/<Name of war file>/api/persons => Base URI)
+2. HTTP Methods
+	GET
+	POST
+	PUT
+	DELETE
+	PATCH
+	HEAD
+	OPTIONS
+3. Resource Representation
+4. Errors
+	HTTP Status Codes
+5. Security
+----------------------------------------------------
+RESTASSURED
+Rest Test Cases -> RestAssured -> REST API Automation Testing Library
+
+Script syntax:
+Given().
+	headers("content-type","application/json").
+	when().
+	get("/api/employees").
+	Then().
+		StatusCode(200).body(expected, actual);
+
+
+
+http://localhost:8080/RestServicesDemo
+
+

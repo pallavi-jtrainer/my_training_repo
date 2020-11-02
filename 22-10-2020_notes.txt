@@ -1,0 +1,85 @@
+Testing -> a technique used to test code / application
+
+Categories
+1. manual testing -> white box testing, black box testing, grey box testing
+2. automation testing -> frameworks, tools
+
+Data flow testing
+control flow testing
+
+
+Levels
+1. Functional Testing
+	Unit testing
+	Integration testing
+	System testing
+2. Non - functional Testing
+	Performance testing
+	UAT
+	Compatibility testing
+
+Regression testing
+
+JUNIT
+1. Test Fixture
+	setUp / init
+	tearDown / finish
+2. Test Suite @RunWith(Suite.class)
+3. Test Runners
+4. Classes -> Assert (assertEquals, assertNotEquals, assertTrue ....)
+	      TestCase 
+	      TestResult
+   interfaces -> Before, BeforeClass, After, AfterClass, Test, RunWith
+
+
+To run all test suites/class
+mvn test
+
+To run a single class
+mvn -Dtest=ClassName test
+
+To run more than 1 test class
+mvn -Dtest=ClassName, ClassName1 test
+
+To run a single method in a test class
+mvn -Dtest=ClassName#methodname test
+
+To run test methods that match a pattern
+mvn -Dtest=ClassName#testRoom* test
+
+
+================================================================================================
+JMockit -> used to fake classes -> mocking
+
+APIs
+1. MockUp<T>() -> takes a parameter (a class) and fake the implementation of the methods in the class 
+2. Expectations -> values or objects expected 
+3. Deencapsulation -> used to call private methods and private fields, inner class
+
+Entities that can be faked
+1. Behaviour methods
+2. DAO 
+3. static methods and static blocks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

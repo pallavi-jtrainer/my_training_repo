@@ -1,0 +1,57 @@
+Testing: technique to detect bugs
+
+JUnit -> testing framework for Java Developers to write and run testcases
+	-> for unit testing
+	-> org.junit package
+
+Unit testing -> 1. manual testing
+		2. automated testing
+
+Features:
+write test codes faster
+simple and easy to use. 
+annotations to identity testcase
+assertions to test the test result
+test runners to run test cases
+junit tests can be organized into test suites
+
+4 sections:
+1. test fixture
+2. test suites
+3. test runners
+4. junit classes -> after, before, assert, test, testclass, testresult, runner 
+
+Test Fixture:
+setUp() -> initializes objects (baseline entities) etc. 
+	-> called before every test method execution
+	-> @Before 
+tearDown() -> reset objects to null. 
+	-> called after every test execution
+	->@After
+
+Test Suites
+bundle of test cases in a specific order
+@RunWith(suite.class)
+
+Test Runners
+execute the test cases
+runClasses method (org.junit.runner.JUnitCore) is used to run 1 or more test cases
+returns a result object (org.junit.runner.Result) -> info about the test case
+
+JUNIT Annotations
+@Before
+@BeforeClass
+@After
+@AfterClass
+@Test
+@Test(timeout=value)
+
+Assert Class
+assertEquals(expected, actual) -> check whether 2 primitive values/ 2 objects are equals
+assertTrue(condition)
+assertFalse(condition)
+assertNull(Object)
+assertNotNull(Object)
+assertSame(obj1, obj2)
+assertNotSame(obj1, obj2)
+

@@ -1,0 +1,24 @@
+Web Service -> exchange systems that connect the business layer and the presentation layer
+	info is in XML (eXtended Markup Language)
+	dynamic
+	are above protocols like TCP/IP, HTTP, HTTPS
+
+SOAP -> Simple Object Access Protocol -> Rule-based
+	-> XML based
+	-> Platform independent
+	-> slow
+RESTful -> REpresentational State Transfer -> architecture
+	JAX-RS -> Java API for REST Services
+	URI -> Uniform Resource Identifier ||| URL
+	Uniform Interface -> CRUD (Create Read Update Delete) 
+			POST, GET, PUT, DELETE
+
+Rest services work with any protocol
+	XML, JSON (JavaScript Object Notification), text etc.
+
+JAX-RS Annotations:
+@Path: represents the relative path of classes and methods
+@GET, @POST, @PUT, @DELETE: specify the HTTP request for a method
+@Produces, @Consumes: specify the request and respose types
+@PathParam: used to bind the parameter to the HTTP request
+

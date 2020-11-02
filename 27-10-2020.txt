@@ -1,0 +1,95 @@
+points to remember when writing testcases
+1. return type
+2. parameter list
+3. any method calls
+
+
+JSON -> JavaScript Object Notation
+-> Douglas Crockford
+-> data format
+-> text written in JSON
+[
+	{
+		"personName": "Kannan",
+		"personId": 1,
+		"age": 34,
+		"address": {
+				"doorNo": 129,
+				"street": "1st Cross",
+				"area": "Rajajinagar",
+				"city": "Bangalore",
+				"state": "Karnataka"	
+			   }
+	},
+	{},
+	{}
+]
+
+parse -> data from the server is converted to JSON
+stringify -> convert a JSON object into a string
+
+JSON values:
+	1. a string
+	2. a number
+	3. a JSON Object
+	4. an array
+	5. a boolean
+	6. null
+
+
+Resource URI -> Uniform Resource Identifier
+
+Checklist
+1. use nouns (/members or /persons)
+2. use plurals to print arrays or collections (/employees)
+3. for a specific element use the identifier (/persons/{id})
+4. don't use spaces between the slashes
+5. don't use file extensions
+
+HTTP Methods:
+	1. GET -> receive info from the server
+	2. POST -> send info to the server
+	3. PUT -> update the entire record
+	4. DELETE -> delete
+	5. PATCH -> update specific fields only
+
+HTTP Status Codes
+200 -> all ok
+201 -> created
+202 -> accepted
+203 -> non - authoritative information
+204 -> no content
+
+301 -> Moved permanently
+
+400 -> Bad request
+403 -> forbidden
+404 -> not found
+401 -> unauthorized
+402 -> payment required
+408 -> request timeout
+415 -> media type not supported
+429 -> too many requests
+
+500 -> internal server error
+502 -> bad gateway
+503 -> service unavailable
+504 -> gateway timeout
+505 -> http version not supported
+
+Method -> success code -> failure code -> crud op
+GET -> 200 Ok -> 404 (not found) -> Read
+POST -> 200 Ok -> 404 (not found), 500, 409 (conflict), 405(method not allowed) -> create
+PUT -> 200 Ok -> 405 (method not allowed), 204 (no content) -> update
+DELETE -> 200 Ok -> 405(method not allowed), 404(not found)
+
+Security Checks:
+	1. Validate all input
+	2. encrypt all the traffic -> https
+	3. OAuth2 (the authentication standard for REST APIs)
+
+Every request / response has 2 major parts:
+	Header -> contains info about the kind of request along with content-type, origin etc
+	Body -> json object or xml file
+
+
