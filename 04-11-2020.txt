@@ -1,0 +1,44 @@
+Angular
+ -> framework
+ -> dynamic web applications
+ -> open-source
+ -> Single page applications (SPA)
+
+Angular Architecture
+	NgModule -> basic building block of angular -> compilation context for component
+
+Parts
+	1. Modules
+	2. Components
+	3. Templates
+	4. Directives
+	5. Services
+	6. Data-binding
+
+component has a template which defines the view
+this template combines the HTML and the angular directives
+
+	component based architecture
+
+Component lifecycle - 8 stages
+  1. ngOnChanges -> executes everytime a value of an input control in the component changes
+  2. ngOnInit -> fired only once. 
+  3. ngDoCheck -> will check the input values to the component properties
+  4. ngAfterContentInit -> executes when all the binding of a component have to checked for the first time. fires only once
+  5. ngAfterContentChecked -> executes after every change detected by the Angular framework
+  6. ngAfterViewInit -> executes when the component completes the rendering of the view to the browser
+  7. ngAfterViewChecked -> executed when the change detected is rendered on screen
+  8. ngOnDestroy -> executed to delete or destroy a component. Called only once
+-------------------------------------------------------------------------
+
+Data Binding
+ -> mechanism for connecting the user interface and the backend (data) 
+ -> 4 types
+	-> two way
+	-> interpolation (one way)
+	-> property binding
+	-> event binding
+
+
+
+

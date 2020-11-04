@@ -1,0 +1,40 @@
+JavaScript -> Scripting Language
+	-> object-based
+
+ways to write JS
+1. inline script
+2. Internal/ embedded script
+3. External script
+
+Typescript
+-> open source, object-oriented programming language
+-> Microsoft
+-> Anders Hejlsberg
+-> superset of JS 
+-> understands and supports the entire JS library
+-> portable
+-> DOM manipulation
+
+TS types:
+ -> Static (compile-time)
+	-> built-in /primitive
+		-> string
+		-> number
+		-> null
+		-> void
+		-> boolean
+		-> undefined
+		-> any
+syntax: let variable: datatype = value;
+	-> user-defined
+		-> array
+syntax: var variable: datatype[] = [value_list...];
+        var variable: Array<datatype> = [value_list...];
+		-> class
+		-> interface
+		-> enum
+		-> functions
+		-> tuple
+ -> Generic
+	
+ -> Decorators
