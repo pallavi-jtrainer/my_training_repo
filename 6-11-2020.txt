@@ -1,0 +1,19 @@
+Directives -> modifies the DOM by changing its appearance or layout.
+
+Reusability
+Readability
+
+@Directive 
+	selector: to identify to a directive in the HTML template
+	input: is used to provide a data to a property
+	output: used to enumerate event properties of directive
+	providers: used to inject a service or component into directive
+
+Types of Directive
+1. Component
+2. Attribute directive
+	ngClass, ngStyle
+3. structural directive
+	ngIf, ngFor, ngSwitch
+
+ 

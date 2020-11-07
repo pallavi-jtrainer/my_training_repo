@@ -1,0 +1,21 @@
+Data Binding -> used to communicate between model and the view
+
+4 types
+	1. interpolation
+	2. two-way binding
+	3. property binding
+	4. event binding
+
+Interpolation:
+	-> one way
+	-> {{ template expression }}
+
+Property binding
+Event binding
+two way binding
+
+2 decorators
+@Input
+@Output
+
+@Input -> specifies the input property.
